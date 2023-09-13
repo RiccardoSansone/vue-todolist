@@ -19,15 +19,17 @@
             <h1>To do List</h1>
             <input v-model="mess" type="text" placeholder="Scrivi la tua task">
             <button @click="add" class="btn">Aggiungi</button>
+            <div>{{error}}</div>
 
             <div class="cardList">
-                <ul>
+                <ul v-if="tasks.length > 0">
                     <li class="d-flex" v-for= "(task,index) in tasks">
                         <span v-if="task.done == true"><s>{{task.text}}</s></span>
                         <span v-else>{{task.text}}</span>
                         <i @click="remove(index)" class="fa-solid fa-x"></i>
                     </li>
                 </ul>
+                <h4 v-else>Nessuna task presente 👀</h4>
             </div>
 
         </div>

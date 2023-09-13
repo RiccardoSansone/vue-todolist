@@ -29,7 +29,7 @@ createApp({
                     text: this.mess,
                     done: false
                 }
-                this.tasks.push(newObject);  
+                this.tasks.push(newObject); 
         }
     }
 }).mount('#app')
