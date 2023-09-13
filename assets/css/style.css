@@ -2,4 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 40%;
+    margin: auto;
+    margin-top: 3rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    /* border: 1px solid black; */
+    /* height: 200px; */
+}
+.cardList{
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 20px;
+    min-height: 200px;
+    box-shadow: 0 0 10px 0 black;
+    padding: 2rem;
+}
+.btn{
+    width: 20%;
+    padding: 0.3rem 0.5rem;
+    background-color: paleturquoise;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 black;
+    color: palevioletred;
+}
+.container input{
+    padding: 0.5rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 0 black;
+    min-width: 60%;
 }
