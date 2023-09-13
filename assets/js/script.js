@@ -20,6 +20,8 @@ createApp({
         }
     },
     methods: {
-
+        remove(index) {
+            this.tasks.splice(index, 1)
+        }
     }
 }).mount('#app')

@@ -42,3 +42,10 @@
     box-shadow: 0 0 5px 0 black;
     min-width: 60%;
 }
+i{
+    margin-left: 2rem;
+    color: red;
+}
+li{
+    padding-top: 0.3rem;
+}
