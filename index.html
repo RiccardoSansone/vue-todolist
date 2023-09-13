@@ -17,15 +17,15 @@
         <div class="container">
 
             <h1>To do List</h1>
-            <input v-model="new" type="text" placeholder="Scrivi la tua task">
+            <input v-model="mess" type="text" placeholder="Scrivi la tua task">
             <button @click="add" class="btn">Aggiungi</button>
 
             <div class="cardList">
                 <ul>
-                    <li class="d-flex" v-for= "task in tasks">
+                    <li class="d-flex" v-for= "(task,index) in tasks">
                         <span v-if="task.done == true"><s>{{task.text}}</s></span>
                         <span v-else>{{task.text}}</span>
-                        <i @click="remove" class="fa-solid fa-x"></i>
+                        <i @click="remove(index)" class="fa-solid fa-x"></i>
                     </li>
                 </ul>
             </div>

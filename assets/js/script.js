@@ -5,7 +5,6 @@ createApp({
         return{
             mess: '',
             tasks: [
-                new {},
                 {
                     text: 'comprare il pane',
                     done: true
@@ -26,7 +25,11 @@ createApp({
             this.tasks.splice(index, 1)
         },
         add(){
-                this.tasks.push(this.new);  
+                let newObject = {
+                    text: this.mess,
+                    done: false
+                }
+                this.tasks.push(newObject);  
         }
     }
 }).mount('#app')
