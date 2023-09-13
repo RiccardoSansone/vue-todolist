@@ -17,8 +17,8 @@
         <div class="container">
 
             <h1>To do List</h1>
-            <input type="text" placeholder="Scrivi la tua task">
-            <button class="btn">Aggiungi</button>
+            <input v-model="new" type="text" placeholder="Scrivi la tua task">
+            <button @click="add" class="btn">Aggiungi</button>
 
             <div class="cardList">
                 <ul>
